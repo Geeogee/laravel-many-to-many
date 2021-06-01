@@ -10,4 +10,9 @@ class Location extends Model
         'address',
         'state'
     ];
+
+    public function employees() {
+
+        return $this -> hasMany(Employee::class);
+    }
 }

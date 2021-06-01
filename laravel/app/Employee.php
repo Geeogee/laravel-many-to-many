@@ -10,4 +10,14 @@ class Employee extends Model
         'firstname',
         'lastname'
     ];
+
+    public function tasks() {
+
+        return $this -> belongsToMany(Task::class);
+    }
+
+    public function location() {
+
+        return $this -> belongsTo(Location::class);
+    }
 }
