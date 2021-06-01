@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 80px;
+  background-color: #217f58;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+footer {
+  height: 80px;
+  background-color: #217f58;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+main {
+  min-height: calc(100vh - 160px);
+}
+
+main ul {
+  list-style-type: none;
+}
+
+main .container {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .employee-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+}
+
+main .employee-list .employee {
+  border-radius: 10px;
+  overflow: hidden;
+  flex-basis: 20%;
+  min-height: 400px;
+  margin: 10px;
+  background-color: #dfb58e;
+}
+
+main .employee-list .employee-title {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main .employee-list .employee-infos {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main .employee-list .employee-location,
+main .employee-list .employee-tasks {
+  padding: 20px;
+  color: #FFF;
+}
+
+main .employee-list .tasks-count {
+  list-style-type: none;
+}
+
+main .employee-list .tasks-count > ol {
+  list-style-position: inside;
+}
+

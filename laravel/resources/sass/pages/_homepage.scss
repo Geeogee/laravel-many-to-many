@@ -1,0 +1,63 @@
+main {
+
+    min-height: calc(100vh - 160px);
+
+    ul {
+        list-style-type: none;
+    }
+
+    .container {
+
+        @include container(70%);
+        @include flex(column, null, center);
+    }
+
+    .employee-list {
+
+        @include flex(row,center,center);
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 10px;
+
+        .employee {
+
+            border-radius: 10px;
+            overflow: hidden;
+            flex-basis: 20%;
+            min-height: 400px;
+            margin: 10px;
+            background-color: $dragonite-orange;
+        }
+
+        .employee-title {
+
+            color: rgba(0,0,0,.5);
+        }
+
+        .employee-infos {
+
+            background-color: rgba(0,0,0,.2);
+            padding: 20px 0;
+            text-transform: uppercase;
+            color: $reshiram-white;
+            font-weight: bold;
+            @include flex(row,center,center)
+        }
+
+        .employee-location, .employee-tasks {
+
+            padding: 20px;
+            color: $reshiram-white;
+        }
+
+        .tasks-count {
+
+            list-style-type: none;
+
+            > ol {
+
+                list-style-position: inside;
+            }
+        }
+    }
+}
